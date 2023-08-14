@@ -74,7 +74,26 @@
 	padding: 10px 16px 10px 14px;
 	cursor: pointer;
 }
-
+#hideSwitcher {
+	cursor:pointer;
+	line-height:43px;
+	font-size: 38px;
+	margin-bottom: 0px; 
+	color:#999;
+	position:absolute;
+	background-color:#fff;
+	width:40px;
+	height:40px;
+	top:7px;
+	right:16px;
+	text-align:right;
+	-webkit-border-bottom-right-radius: 3px;
+	   -webkit-border-top-right-radius: 4px;
+		-moz-border-radius-bottomright: 3px;
+		   -moz-border-radius-topright: 4px;
+		    border-bottom-right-radius: 3px;
+			   border-top-right-radius: 4px;
+}
 
 
 #switcher .content-switcher {
