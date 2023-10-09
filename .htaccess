@@ -3,6 +3,13 @@ ErrorDocument 404 https://r4-club.com
 Enable .htaccess
 RewriteEngine On
 RewriteBase /
+
+#if you get a request for this /index.html(any-path)
+RewriteCond %{REQUEST_URI} ^/index.html/(.+)$
+#redirect to  any-path
+RewriteRule . %1     [R=301,L]
+
+
 Disable directory listing
 Options -Indexes
 Protect .htaccess and .htpasswd files
