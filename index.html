@@ -363,5 +363,17 @@ if (closedUntil && Date.now() < parseInt(closedUntil)) {
 }
 });
 </script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/serviceworker.js')
+      .then((registration) => {
+        console.log('ServiceWorker registered:', registration);
+      })
+      .catch((error) => {
+        console.error('ServiceWorker registration failed:', error);
+      });
+  }
+</script>
 </body>
 </html>
