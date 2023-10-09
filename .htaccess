@@ -2,6 +2,7 @@ ErrorDocument 404 https://r4-club.com
 
 Enable .htaccess
 RewriteEngine On
+RewriteBase /
 Disable directory listing
 Options -Indexes
 Protect .htaccess and .htpasswd files
